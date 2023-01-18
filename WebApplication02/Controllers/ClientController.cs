@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using WebApplication02.Models;
 using WebApplication02.Models.Requests;
 using WebApplication02.Services;
@@ -19,24 +20,28 @@ namespace WebApplication02.Controllers
         }
 
         [HttpDelete("delete")]
+        [SwaggerOperation(OperationId = "ClientDelete")]
         public ActionResult<int> Delete(int id)
         {
             return Ok(_clientRepository.Delete(id));
         }
 
         [HttpGet("get-all")]
+        [SwaggerOperation(OperationId = "ClientGetAll")]
         public ActionResult<List<Client>> GetAll()
         {
             return Ok(_clientRepository.GetAll());
         }
 
         [HttpGet("get-by-id")]
+        [SwaggerOperation(OperationId = "ClientGetById")]
         public ActionResult<Client> GetById(int id)
         {
             return Ok(_clientRepository.GetById(id));
         }
 
         [HttpPost("create")]
+        [SwaggerOperation(OperationId = "ClientCreate")]
         public ActionResult<int> Create([FromBody] CreateClientRequest createClientRequest)
         {
             int result = _clientRepository.Create(new Client
@@ -52,6 +57,7 @@ namespace WebApplication02.Controllers
         }
 
         [HttpPut("update")]
+        [SwaggerOperation(OperationId = "ClientUpdate")]
         public ActionResult<int> Update([FromBody] UpdateClientRequest updateClientRequest)
         {
             int result = _clientRepository.Update(new Client

@@ -10,6 +10,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientDelete",
         "parameters": [
           {
             "name": "id",
@@ -52,6 +53,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientGetAll",
         "responses": {
           "200": {
             "description": "Success",
@@ -90,6 +92,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientGetById",
         "parameters": [
           {
             "name": "id",
@@ -129,6 +132,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientCreate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -180,6 +184,7 @@
         "tags": [
           "Client"
         ],
+        "operationId": "ClientUpdate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -452,6 +457,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetDelete",
         "parameters": [
           {
             "name": "id",
@@ -494,6 +500,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetGetAll",
         "responses": {
           "200": {
             "description": "Success",
@@ -532,6 +539,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetGetById",
         "parameters": [
           {
             "name": "id",
@@ -571,6 +579,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetCreate",
         "requestBody": {
           "content": {
             "application/json": {
@@ -622,6 +631,7 @@
         "tags": [
           "Pet"
         ],
+        "operationId": "PetUpdate",
         "requestBody": {
           "content": {
             "application/json": {

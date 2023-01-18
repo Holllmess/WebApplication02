@@ -72,7 +72,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="OpenAPIs\swagger.json">
-      <Namespace>CSNamespace</Namespace>
+      <Namespace>CSClientNamespace</Namespace>
       <ClassName>CSClient</ClassName>
       <CodeGenerator>NSwagCSharp</CodeGenerator>
       <SourceUri>http://localhost:5091/swagger/v1/swagger.json</SourceUri>

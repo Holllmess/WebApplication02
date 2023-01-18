@@ -1,4 +1,4 @@
-﻿using CSNamespace;
+﻿using CSClientNamespace;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -28,7 +28,7 @@ namespace ClinicDesctop
         {
             CSClient clientCS = new CSClient("http://localhost:5091/", new System.Net.Http.HttpClient());
 
-            ICollection<Client> clients = (ICollection<Client>)clientCS.GetAllAsync().Result;
+            ICollection<Client> clients = clientCS.ClientGetAllAsync().Result;
 
             listView1Clients.Items.Clear();
             foreach (Client client in clients)

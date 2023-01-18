@@ -52,7 +52,7 @@ namespace WebApplication02.Services.Implementation
                 consultation.ConsultationId = reader.GetInt32(0);
                 consultation.PetId = reader.GetInt32(1);
                 consultation.ClientId = reader.GetInt32(2);
-                consultation.ConsultationDate = new DateTime(reader.GetInt64(3));
+                consultation.ConsultationDate = new DateTime(reader.GetInt32(3));
                 consultation.Description = reader.GetString(4);
 
                 list.Add(consultation);
